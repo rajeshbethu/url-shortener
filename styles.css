@@ -1,0 +1,81 @@
+*{
+ 	box-sizing: border-box;
+ 	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+ }
+body{
+	background: #0f3150;
+	color: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.main{
+	width: 70%;
+	margin: 0px auto;
+}
+h1{
+	margin-top: 15%;
+}
+.form{
+	display: flex;
+}
+#url{
+	width: 75%;	
+	padding: 10px;
+	outline: none;
+	border-radius: 3px;
+	border: none;
+}
+#submit{
+	width: 22%;
+	padding: 10px;
+	margin-left: auto;
+	color: #0f3150;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#short_url{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+.new_url{
+	color: #fff;
+	margin: 0;
+}
+#copy{
+	cursor: pointer;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	margin-left: 10px;
+}
+#new_url{
+	color: #fff;
+}
+#copied_msg{
+	display: none;
+	margin-left: 15px;
+}
+@media screen and (max-width: 680px) {
+	.main{
+		width: 100%!important;
+		margin: 0px auto;
+	}
+}
+@media screen and (max-width: 500px) {
+	.form{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	#url{
+		width: 100%;	
+	}
+	#submit{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 5px;
+	}
+}
